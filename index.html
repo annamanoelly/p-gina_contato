@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Killua Books - Contato</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <div id="main-container">
+
+    <!-- LADO ESQUERDO - INFORMAÇÕES -->
+    <div id="address-container">
+      <div class="fade"></div>
+      <div id="address-content">
+        <h2><ion-icon name="navigate-outline"></ion-icon> Endereço</h2>
+        <p>Rua das Flores, 133</p>
+
+        <h2><ion-icon name="call-outline"></ion-icon> Telefone</h2>
+        <p>(48) 99999-9999</p>
+
+        <h2><ion-icon name="mail-outline"></ion-icon> E-mail</h2>
+        <p>meuemail@email.com</p>
+        <!-- Botão de redirecionamento -->
+        <div class="redirect-button">
+          <a href="https://annamanoelly.github.io/vue_livro/">Entre em contato</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- LADO DIREITO - FORMULÁRIO -->
+    <div id="form-container">
+      <h2>Fale com a gente</h2>
+      <form id="contact-form" action="#" method="post">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" name="phone" placeholder="(DDD) 99999-9999" />
+
+        <label for="msg">Mensagem</label>
+        <textarea id="msg" name="msg" placeholder="Como podemos ajudar?" required></textarea>
+
+        <input type="submit" value="Enviar mensagem" />
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+/* RESET GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* CONTAINER PRINCIPAL */
+#main-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+#address-container {
+  background-image: url('images/kilua.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fade {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+/* CAIXA COM TEXTO SOBRE A IMAGEM */
+#address-content {
+  position: relative;
+  z-index: 2;
+  padding: 90px;
+  max-width: 350px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 300px;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+#address-content h2 {
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  color: #00FFB7;
+}
+
+#address-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+ion-icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* LADO DIREITO - FORMULÁRIO */
+#form-container {
+  flex: 1;
+  background-color: #b8b8d2;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #333;
+}
+
+#form-container h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #4b2e83;
+}
+
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #555;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #4b2e83;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #b8b8d2;
+  outline: none;
+}
+
+#contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#contact-form input[type="submit"] {
+  background-color: #4b2e83;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 14px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: #673ab7;
+}
+
+.redirect-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.redirect-button a {
+  display: inline-block;
+  background-color: #4d327c;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 28px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.redirect-button a:hover {
+  background-color: #673ab7;
+  transform: scale(1.05);
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  #main-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  #address-container,
+  #form-container {
+    flex: 1 1 100%;
+  }
+
+  #form-container {
+    padding: 40px 20px;
+  }
+
+  #address-content {
+    margin: 40px 20px;
+  }
+}
+
